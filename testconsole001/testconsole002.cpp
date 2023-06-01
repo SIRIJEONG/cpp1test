@@ -38,7 +38,7 @@
 //int Remainder(int num1, int num2) {
 //	return num1 % num2;
 //}
-//
+
 //int PlusHeal(int heal) {
 //
 //	int MaxHp = 50;
@@ -58,12 +58,13 @@
 
 int main() {
 	
-	int cp = 2;
-	int inputNumber = 0;
-	scanf_s("%d", &inputNumber);
-	printf("숫자를 입력해주세여 ->");
+	//printf("숫자를 입력해주세여 ->"); //출력
+	//int cp = 2; // 컴퓨터의 상수
+	//int inputNumber = 0; //선언과 초기화 
+	//scanf_s("%d", &inputNumber); // 입력함수 
+	//
 
-	int abc = (cp < inputNumber) ? printf("승리") : printf("패배"); 
+	//int abc = (cp < inputNumber) ? printf("승리") : printf("패배"); 
 	
 
 
@@ -75,11 +76,15 @@ int main() {
 
 
 	/*PrintFunc(20);*/
+
+
 	//printf("두 수의 더하기는 %d 입니다.  \n", Plus(9, 2));
 	//printf("두 수의 빼기는는 %d 입니다.  \n", Minus(9, 2));
 	//printf("두 수의 나누기는 %d 입니다.  \n", Division(9, 2));
 	//printf("두 수의 곱하기는 %d 입니다.  \n", Multiplication(9, 2));
 	//printf("두 수의 나머지는 %d 입니다.  \n", Remainder(9, 2));
+
+
 	//c++ 에서 main 함수는 무조건 있어야 한다.
 	//프로그램은 main함수에서 부터 시작한다. 
 	/*YourAge(25);*/ // 이런게 함수의 호출이다.
@@ -105,19 +110,19 @@ int main() {
 
 
 	//int num1 = 9, num2 = 2;
-	//int result1 = 0;
-	//result1 += (num1 + num2);
-	////result1 = result1 + (num1 + num2);
+	//int result1 = 0; //선언과 초기화 
+	//result1 += (num1 + num2); //result1 = result1 + (num1 + num2); 와 같은 뜻이다
+	//printf("% d \n" , result1);
 
 	////num1++;
-	//printf("num1 : %d \n", num1++);
+	//printf("num1 : %d \n", num1++); 
 
 	////++num1;
 	//printf("num1 : %d \n", ++num1);
 
 	//int someNumber = 0;
 	//someNumber = someNumber++;
-	//printf(" someNumber 안에는 무슨 값이 들어 있을까 ? %d \n", someNumber);
+	//printf("someNumber 안에는 무슨 값이 들어 있을까 ? %d \n", someNumber);
 
 	//printf("%d + %d = %d \n", num1, num2, num1 + num2);
 	//printf("%d - %d = %d \n", num1, num2, num1 - num2);
@@ -155,8 +160,11 @@ int main() {
 	//int age = 25;
 	//bool boolResult;
 
-	//boolResult = (age < 20) ? true : false;
-	//printf("Bool result는 어떤 값? %d", boolResult);
+	//boolResult = (age < 20) ? true : false
+ //   printf("Bool result는 어떤 값? %d", boolResult);
+	
+	
+	
 	//printf("총 힐량은 %d 입니다.", PlusHeal(20));
 
 
