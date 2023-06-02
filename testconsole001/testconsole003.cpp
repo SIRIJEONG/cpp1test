@@ -11,39 +11,40 @@
 //	return (x - y) * (y + z) * (y % x);
 //}
 
-//
 //float oneban(int ban);  //전방선언 
 
 /*char Al(char alpha);  *///전방선언 
 
 
 //void result(int r); // void 반지름 
-int star(int a , int b);
+// 
+//int star(int a , int b);
 
 
 int main() {
 
-	//{ 변수 선언부
+	/*{ 변수 선언부*/
 	//int result;
 	//int result1;
+	//int num1;
+	//int num2;
 	//int x, y, z;
-	//} 변수 선언부 
+	/*} 변수 선언부 */
 
-	// { 사용자 입력 받는 로직
-	//printf("정수 one : ");
-	//scanf_s("%d", &num1);
-	//printf("정수 two : ");
-	//scanf_s("%d", &num2);
+	/* { 사용자 입력 받는 로직*/
+
 	//printf("정수 2개를 입력해 주세요 :");
-	//scanf_s("%d , %d", &num1 , &num2);  //줄여서 쓸수도 있다. 
-	// } 사용자 입력 받는 로직
-	/*int x, y, z;*/
+	
+	/*scanf_s("%d , %d", &num1 , &num2); */ //줄여서 쓸수도 있다. 
+	/* } 사용자 입력 받는 로직*/
+	//int x, y, z;
 	//printf("정수 3개를 입력해 주세요 :");
 	//scanf_s("%d , %d , %d", &x , &y , &z);
-	// { 실제 연산하는 로직 / 플러스 연산 
-	//result = num1 + num2;  
+	/* { 실제 연산하는 로직 / 플러스 연산 */
+
+	/*result = num1 + num2*/;  
 	//printf("%d + %d = %d \n", num1, num2, result);
-	// } 실제 연산하는 로직 / 플러스 연산 
+	/* } 실제 연산하는 로직 / 플러스 연산*/ 
 
 	//result = x + (y * z);  //함수x
 	//printf("%d + (%d * %d) = %d\n", x, y , z, result(x,y,z));  //함수x
@@ -69,7 +70,7 @@ int main() {
 	//printf(" long 의 크기는 %d byte \n", sizeof(longValue));
 	//printf(" long long 의 크기는 %d byte \n", sizeof(longlongValue));
 
-
+	//
 	//printf(" float 의 크기는 %d byte \n", sizeof(floatValue));
 	//printf(" double 의 크기는 %d byte \n", sizeof(doubleValue));
 	//printf(" long double 의 크기는 %d byte \n", sizeof(longDoubleValue));
@@ -91,21 +92,21 @@ int main() {
 	//result(r);  //void 사용 반지름 
 
 
-	//char charValue = 'A';
-	//printf("char 출력할 때 는 c로 해보자 -> %d \n", charValue);
+/*	char charValue = 'A';
+	printf("char 출력할 때 는 c로 해보자 -> %d \n", charValue);
 
-	//char someAlphabet = 'D';
-	//bool isSame = ('A' == 65);
-	//bool isBigAlphabet = ('A' <= someAlphabet && someAlphabet <= 'Z');
-	//printf("\n Some alphabet은 대문자 인가?? %d \n", isBigAlphabet);
+	char someAlphabet = 'D';
+	bool isSame = ('A' == 65);
+	bool isBigAlphabet = ('A' <= someAlphabet && someAlphabet <= 'Z');
+	printf("\n Some alphabet은 대문자 인가?? %d \n", isBigAlphabet);
 
-	//char alpha;
-	//printf("문자를 입력하세여 -> " );
-	//scanf_s("%c", &alpha);
+	char alpha;
+	printf("문자를 입력하세여 -> " );
+	scanf_s("%c", &alpha);
 
-	//bool a = ('A' <= alpha && alpha <= 'Z');
-	//bool b = ('a' <= alpha && alpha <= 'z');
-	//(a == b) ?  printf("특수문자입니다.") :printf( "알파벳 입니다."); // 대문자도 아니고 소문자도 아니면 특수문자로 인정 이지 방법 1 
+	bool a = ('A' <= alpha && alpha <= 'Z');
+	bool b = ('a' <= alpha && alpha <= 'z');
+	(a == b) ?  printf("특수문자입니다.") :printf( "알파벳 입니다."); */// 대문자도 아니고 소문자도 아니면 특수문자로 인정 이지 방법 1 
 
 
 
@@ -144,19 +145,36 @@ int main() {
 
 
 
-	//printf("진짜로 같을까? %d \n", isSame);
+
 //int loopcount = 388;
 //while (1 <= loopcount) {
 //	printf("Hello world! 몇번 째 돌고 있는지 ? %d \n" , loopcount);
 //	loopcount -= 1;
 //	} // loop종료
 
-int star;
-
-printf("사이즈를 입력해 주세여 ->");
-scanf_s("%d", &star);
-
-apple(star);
+//int star;
+//
+//printf("사이즈를 입력해 주세여 ->");
+//scanf_s("%d", &star);
+//
+//int width = 0;
+//int heigh = 0;
+//if (3 <= star && star <= 10) {
+//	while (star > heigh) {
+//		while (star > width) {
+//			printf("* ");
+//			width += 1;
+//
+//		}
+//		width = 0;
+//		printf("\n");
+//		heigh += 1;
+//
+//	}
+//}
+//else {
+//
+//}
 	//while (0 <= num&&num  <= 10) {
 	//	printf("%d \n", num);
 	//	num += 1;
@@ -166,32 +184,12 @@ apple(star);
 
 	return 0;
 } //main() 함수의 끝을 알려주는 것이 좋다. 
+//
+//int apple(int star);
 
-int apple(int star) {
-	int width = 0;
-	int heigh = 0;
-	if (3 <= star && star <= 10) {
-		while (star > heigh) {
-			while (star > width) {
-				printf("* %d");
-				width += 1;
-
-			}
-			width = 0;
-
-			heigh += 1;
-
-		}
-	}
-	else {
-
-	}
-	return 0 ;
+char al(char alpha) {
+	return alpha;
 }
-
-//char al(char alpha) {
-//	return alpha;
-//}
 
 //void result(int r)
 //{
