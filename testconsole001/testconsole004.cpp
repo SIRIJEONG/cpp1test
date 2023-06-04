@@ -15,36 +15,43 @@ void Descrtiption007();
 void Descrtiption008();
 void Descrtiption009();
 
-int main() {
+int main()
+{
 	//int loopCount = 1;
-	//while (loopCount <= 10) {
-	//	if (loopCount == 7) { 
+	//while (loopCount <= 10) 
+	//{
+	//	if (loopCount == 7) 
+	//	{ 
 	//		loopCount += 1;
-	//		/*continue;  */  //loop를 계속 돈다
-	//		break; // break를 만나는 순간  loop를 빠져나간다.
+	//		continue;  //loop를 계속 돈다   
+	//		/*break; */// break를 만나는 순간  loop를 빠져나간다.
 	//	}
 
 	//	printf("이것은 무조건 출력되는 문장이다. loopCount: %d \n" , loopCount);
 	//	loopCount += 1;
-	//}  //loop : 일정 횟수 반복 
+	/*}*///loop : 일정 횟수 반복 
 
 
 
 
 	//char userInput = '0';
 	//int loopCount = 1;
-	//while (1) {  // 1을 입력하면 무한히 반복한다. 
-	//	if (loopCount == 1) {
+	//while (1)
+	//{  // 1을 입력하면 무한히 반복한다. 
+	//	if (loopCount == 1) 
+	//	{
 	//		printf("[튜토리얼] 만약 게임을 만들려고 한다면 이런식으로 \n\n");
 	//	}
-	//	printf("\n[system] 당신은 플레이어 입니다. \n");
-	//	printf("수행할 액션을 입력해 주세요 : ");
-	//	scanf_s("%c", &userInput);
-	//	if (userInput == 'q' || userInput == 'Q') {
+	//		printf("\n[system] 당신은 플레이어 입니다. \n");
+	//		printf("수행할 액션을 입력해 주세요 : ");
+	//		scanf_s("%c", &userInput);
+	//	if (userInput == 'q' || userInput == 'Q')
+	//	{
 	//		printf("\n[System]프로그램을 종료합니다. \n");
 	//		break;
 	//	}
-	//	else {
+	//	else
+	//	{
 	//		printf("[System]\n해당 입력은 정의되어 있지 않습니다. \n");
 	//		loopCount += 1;
 	//		continue;
@@ -58,20 +65,23 @@ int main() {
 	//int loopCount = 1;
 
 	////홀수 짝수 구분 
-	//while (1) {
+	//while (1)
+	//{
 	//	printf("숫자를 입력해 주세요 : ");
 	//	scanf_s("%d", &userInput);
 
 	//	//탈출조건
-	//	if (userInput == 0) {
+	//	if (userInput == 0)
+	//	{
 	//		printf("\n[System]프로그램을 종료합니다. \n");
 	//		break;
 	//	}
-	//	else if (userInput % 2 == 1){
+	//	else if (userInput % 2 == 1) {
 	//		printf("홀수 입니다. \n");
 	//		loopCount += 1;
-	//	}		
-	//	else {
+	//	}
+	//	else
+	//	{
 	//		printf("짝수입니다..\n");
 	//		loopCount += 1;
 	//		continue;
@@ -80,17 +90,18 @@ int main() {
 	//}
 
 
-	
+
 	//Descrtiption003();
 	//Descrtiption004();
 	//Descrtiption005();
 	//Descrtiption006();
 	//Descrtiption007();
 	//Descrtiption008();
-	Descrtiption009();
-}  // main()
-
-//void Descrtiption008() {
+	//Descrtiption009();
+	 // main()
+}
+//void Descrtiption008() 
+//{
 //
 //	int randomNumber = 0;
 //	const int MAX_DICE_VALUE = 6;
@@ -101,7 +112,8 @@ int main() {
 //	_getch();
 //	printf("컴퓨터가 뽑은 3개의 주사위 값 -> ");
 //	
-//	for (int i = 0; i < 3; i++) {
+//	for (int i = 0; i < 3; i++) 
+// {
 //		Sleep(1000);
 //		randomNumber = (rand() % MAX_DICE_VALUE) + 1;
 //		printf("%d ", randomNumber);
@@ -118,34 +130,39 @@ int main() {
 // loop사용해서 종료 
 // 데미지값 매직넘버 플레이어가 어떤 상태인지 출력해서 보여줄 것 (크리티컬인지 아닌지 알 수 있어야 함)
 
-void Descrtiption009() {
-	const int Damage = 100;
-	int probability = 0;
-	srand(time(NULL));
-	int boss = 1000;
-
-
-while (1) {
-			Sleep(1000);
-			probability = (rand() % 100) + 1;
-
-			if (probability >= 60 && boss > 0) {
-				printf("%f 크리티컬입니다! 보스가 정신못차립니다..(100중 %d이 나와 크리티컬이 터졌습니다.)\n보스의 체력이 %d 남았습니다.\n", Damage * 1.5 , probability, boss -= 150);
-				continue;
-			}
-			else if (probability <= 60 && boss > 0) {
-				printf("100 어림도 없지!(100중 %d이 나와서 평타를 칩니다.)\n 보스의 체력이 %d 남았습니다.\n", probability, boss -= 100);
-				continue;
-			}
-			else {
-				system("cls");
-				printf("보스를 처치했습니다.");
-				break;
-			}
-			//system("cls");
-		}
-	
-}
+//void Descrtiption009() 
+// {
+//	const int Damage = 100;
+//	int probability = 0;
+//	srand(time(NULL));
+//	int boss = 1000;
+//
+//
+//			while (1) 
+//			{
+//			Sleep(1000);
+//			probability = (rand() % 100) + 1;
+//
+//			if (probability >= 60 && boss > 0) 
+//			{
+//				printf("%f 크리티컬입니다! 보스가 정신못차립니다..(100중 %d이 나와 크리티컬이 터졌습니다.)\n보스의 체력이 %d 남았습니다.\n", Damage * 1.5 , probability, boss -= 150);
+//				continue;
+//			}
+//			else if (probability <= 60 && boss > 0) 
+//			{
+//				printf("100 어림도 없지!(100중 %d이 나와서 평타를 칩니다.)\n 보스의 체력이 %d 남았습니다.\n", probability, boss -= 100);
+//				continue;
+//			}
+//			else 
+//			{
+//				system("cls");
+//				printf("보스를 처치했습니다.");
+//				break;
+//			}
+//			//system("cls");
+//		}
+//	
+//}
 
 
 //플레이어는 숫자를 미리 볼수 없다 , 플레이어가 홀짝을 맞춰야한다. 
@@ -232,9 +249,9 @@ while (1) {
 //	}
 //	printf("\n\n");
 //
-//	randomNumber1 = rand()% 11; //rand() 함수를 사용해서 랜덤값을 받는다.
-//	randomNumber2 = rand()% 11;
-//	randomNumber3 = rand()% 11;
+//	randomNumber1 = rand()% 100; //rand() 함수를 사용해서 랜덤값을 받는다.
+//	randomNumber2 = rand()% 100;
+//	randomNumber3 = rand()% 100;
 //
 //	printf("Random number?? %d \n", randomNumber1);
 //	printf("Random number?? %d \n", randomNumber2);
