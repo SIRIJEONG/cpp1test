@@ -35,6 +35,7 @@ void walk()
 	while(playerWalk < 7)
 	{
 
+	//이동질문 그리고 번호 입력
 	printf("이동하시겠습니까?");
 	printf("\n1.yes   2.no\n");
 	scanf_s("%d", &choice );
@@ -50,31 +51,34 @@ void walk()
 	float Playercritical = PlayerDamage * 1.5;
 	int heal = 4;
 
-	if (choice == 1 && playerWalk < 6)
-	{
-		randomPlace = rand() % 100 + 1;
 
-		if (100 >= randomPlace&& randomPlace >= 50)
+
+
+	if (choice == 1 && playerWalk < 6)										 // 1번을 입력하고 playerWalk가 6 이하일 때 실행 된다.
+	{
+		randomPlace = rand() % 100 + 1;										 // 1~100까지 랜덤 숫자를 나오게 하여 randomPlace 확률 결정
+
+		if (100 >= randomPlace&& randomPlace >= 50)							 // randomPlace 50%확률 조건식
 		{
 			printf("아케인 생츄어리로 이동합니다.\n", playerWalk += 1);
 			printf("%d번 이동했습니다.\n\n", playerWalk);
 
-			randomBoss = rand() % 100 + 1;
+			randomBoss = rand() % 100 + 1;									//1~100까지 랜덤숫자를 나오게 하여 randomBoss 확률 결정
 
-			if (randomBoss > 60) 
+			if (randomBoss > 60)											//40% 확률로 몬스터 출현
 			{
 				printf("|ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ|\n");
 				printf("| 디아블로를 만났습니다  |\n");
 				printf("|ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ|\n\n");
 				printf("------------------------------------------------------------------------------------------\n\n");
 
-				while (1)
+				while (1)  //무한루프
 				{
-					Sleep(1500);
-					probability = (rand() % 100) + 1;
+					Sleep(1500);  //출력시간 조정
+					probability = (rand() % 100) + 1;  //크리티컬 확률 결정
 
 
-					if (probability > 60 && Diablo > 0 && Player > 0)
+					if (probability > 60 && Diablo > 0 && Player > 0)  //40% 확률로 크리티컬 그리고 플레이어와 몬스터가 살아있을 경우 실행
 					{
 						printf("플레이어가 공격을 합니다. \n크리티컬입니다! 디아블로가 정신못차립니다..\n%f의 데미지를 입혔습니다.\n\n", Playercritical);
 						printf("디아블로가 공격을 합니다.\n%d의 데미지를 받았습니다. \n\n", DiabloDamage);
@@ -92,14 +96,14 @@ void walk()
 
 						continue;
 					}
-					else if (probability <= 60 && Diablo > 0 && Player > 0)
+					else if (probability <= 60 && Diablo > 0 && Player > 0)  // 60% 확률로 기본공격 그리고 플레이어와 몬스터가 살아있을 경우
 					{
 						printf("플레이어가 공격을 합니다.\n%d의 데미지를 입혔습니다.\n\n", PlayerDamage);
 						printf("디아블로가 공격을 합니다.\n%d의 데미지를 받았습니다.\n\n", DiabloDamage);
-						printf("물약을 먹었습니다. hp를 %d 회복했습니다.\n\n", heal, Player += heal);
+						printf("물약을 먹었습니다. hp를 %d 회복했습니다.\n\n", heal, Player += heal);  //힐
 
 						printf("|ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ|\n");
-						printf("| 디아블로 남은체력 %d  |\n", Diablo -= Playercritical);
+						printf("| 디아블로 남은체력 %d  |\n", Diablo -= Playercritical);  
 						printf("|ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ|\n\n");
 
 						printf("|ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ|\n");
@@ -110,20 +114,20 @@ void walk()
 
 						continue;
 					}
-					else if (Player > 0 && Diablo <= 0)
+					else if (Player > 0 && Diablo <= 0)  //플레이어 hp 0이상이고 몬스터 hp가 0이거나 0보다 작을 때 몬스터 처치 
 					{
 						/*system("cls");*/
 						printf("디아블로를 처치했습니다.");
 						break;
 					}
-					else if (Player <= 0 && Diablo <= 0)
+					else if (Player <= 0 && Diablo <= 0)  //플레이어와 몬스터 둘다 hp가 0이거나 0보다 작을때 플레이어 사망 
 					{
 						printf("사망했습니다.", playerWalk = 0);
 						system("cls");
 
 						break;
 					}
-					else
+					else  //플레이어hp가 0 이하면 사망
 					{
 						printf("사망했습니다.", playerWalk = 0);
 						system("cls");
@@ -133,7 +137,7 @@ void walk()
 
 				}
 			}
-			else 
+			else //몬스터를 만나지 않았을 때 
 			{
 				continue;
 			}
@@ -303,7 +307,7 @@ void walk()
 			continue;
 		}
 	}
-	else if (playerWalk == 6) 
+	else if (playerWalk == 6) //플레이어 이동횟수가 6번이 되면  클리어 합니다.
 	{
 		printf("\n\n클리어 하였습니다!!!!!!!!!!!!\n\n");
 		printf("\n\n클리어 하였습니다!!!!!!!!!!!!\n\n");
@@ -315,7 +319,7 @@ void walk()
 	}
 	else
 	{
-		printf("이거 누를 거면 게임왜켰냐 ㅋㅋ\n");
+		printf("이거 누를 거면 게임왜켰냐 ㅋㅋ\n"); //이동안한다고 하면 출력 
 		continue;
 	}
 	}
