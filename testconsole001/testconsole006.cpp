@@ -306,7 +306,7 @@ void swap(char firstChar, char secondChar) {
 	firstChar = secondChar;
 	secondChar = temp;
 	printf("[스왑 이후 ]firstChar 값 : %c , secondChar 값  %c \n" , firstChar, secondChar);
-}
+
 
 
 
