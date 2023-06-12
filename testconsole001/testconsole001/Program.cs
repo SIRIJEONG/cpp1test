@@ -226,8 +226,8 @@ namespace testconsole001
 
         }
              
-
             //int[] numbers = new int[5];
+
             //int[,] numbers2 = new int[5, 5];
 
             //int valueCount = 0;
