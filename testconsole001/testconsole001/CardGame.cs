@@ -91,31 +91,23 @@ namespace testconsole001
                     if (lottos2[i] % 4 == 0)
                     {
                         Console.Write("{0} ", card[0]);
-
                     }
                     else if (lottos2[i] % 4 == 1)
                     {
                         Console.Write("{0} ", card[1]);
-
-
-
                     }
                     else if (lottos2[i] % 4 == 2)
                     {
                         Console.Write("{0} ", card[2]);
-
-
-
                     }
                     else
                     {
                         Console.Write("{0} ", card[3]);
-
-
-
                     }
 
                 }
+
+
                 string userGambling = default;
                 string userChoice = default;
                 Console.WriteLine();
@@ -258,7 +250,7 @@ namespace testconsole001
                     Console.WriteLine();
 
 
-
+                    
                     if (0 < userMoney&& userMoney < 1000)
                     {
                         Console.WriteLine("다음 턴을 시작합니다.");

@@ -120,7 +120,7 @@ int main() {
 //	}
 //	else if (number[i] < number[i + 1]) {
 //		continue;
-//
+//s
 //	}
 //
 //
@@ -297,7 +297,7 @@ void Description006() {
 		char_[i] = '*';
 	}
 	for (int y = 0; y < 5; y++) {
-		for (int x = 0; x < 5; x++) {
+		for (int x = 0; x < 5; x++) 
 			if (x == 2 && y == 2) {
 				char2_[2][2] = '0';
 				continue;
