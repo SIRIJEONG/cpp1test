@@ -11,30 +11,30 @@ namespace testConsole003
     {
 
 
-        
 
-            //사용자에게서 사이즈를 입력받아서 * 배열을 초기화 한다. 단 입력은 (5~15 사이의 값)
-            // ex)사용자가 5를 입력한 경우 
-            //* * * * *
-            //* * * * *
-            //* * * * *
-            //* * * * *
-            //* * * * *
-            //wasd로 플레이어가 4방향으로 이동한다. 
-            //무작위로 일정 시간마다 코인이 등장한다. 
-            //플레이어가 코인을 먹을 수 있다. 
-            //플레이어가 코인을 먹는 경우 스코어가 올라간다. 
-            //일정 스코어를 달성하면 게임을 종료한다. 
+
+        //사용자에게서 사이즈를 입력받아서 * 배열을 초기화 한다. 단 입력은 (5~15 사이의 값)
+        // ex)사용자가 5를 입력한 경우 
+        //* * * * *
+        //* * * * *
+        //* * * * *
+        //* * * * *
+        //* * * * *
+        //wasd로 플레이어가 4방향으로 이동한다. 
+        //무작위로 일정 시간마다 코인이 등장한다. 
+        //플레이어가 코인을 먹을 수 있다. 
+        //플레이어가 코인을 먹는 경우 스코어가 올라간다. 
+        //일정 스코어를 달성하면 게임을 종료한다. 
         int userx = 0;
         int usery = 0;
         int turn = 0;
         int coiny = 0;
         int coinx = 0;
         int score = 0;
-            System.ConsoleKeyInfo key = default;
-            
-            int pressKey = 0;
-            char[,] char2_ = new char[5,5];
+        System.ConsoleKeyInfo key = default;
+
+        int pressKey = 0;
+        char[,] char2_ = new char[5, 5];
 
         public void FindStar()
         {
@@ -50,14 +50,14 @@ namespace testConsole003
                 {
                     if (x == 0 && y == 0)
                     {
-                        char2_[y,x] = '0';
+                        char2_[y, x] = '0';
                         continue;
                     }
-                    char2_[y,x] = '*';
+                    char2_[y, x] = '*';
                 }
             }
 
-            while (true) 
+            while (true)
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
 
@@ -69,7 +69,7 @@ namespace testConsole003
                 {
                     coinx = random.Next(1, 5);
                     coiny = random.Next(1, 5);
-                    if(char2_[coiny, coinx] == char2_[usery, userx])
+                    if (char2_[coiny, coinx] == char2_[usery, userx])
                     {
                         continue;
                     }
@@ -80,11 +80,11 @@ namespace testConsole003
 
                 for (int y = 0; y < 5; y++)
                 {
-                    for(int  x = 0; x < 5; x++)
+                    for (int x = 0; x < 5; x++)
                     {
-                        if(char2_[y, x] == 'ⓒ')
+                        if (char2_[y, x] == 'ⓒ')
                         {
-                            
+
                             Console.ForegroundColor = ConsoleColor.DarkYellow;
                             Console.Write("{0} ", char2_[y, x]);
                             Console.ResetColor();
@@ -94,7 +94,7 @@ namespace testConsole003
                         {
                             Console.ForegroundColor = ConsoleColor.White;
 
-                            Console.Write("{0} " , char2_[y,x]);
+                            Console.Write("{0} ", char2_[y, x]);
                             Console.ResetColor();
 
                         }
@@ -102,7 +102,7 @@ namespace testConsole003
                     Console.WriteLine();
                 }
 
-               key = Console.ReadKey(true);
+                key = Console.ReadKey(true);
                 Console.Clear();
 
 
@@ -218,7 +218,7 @@ namespace testConsole003
                 {
                     break;
                 }
-               
+
 
             }
 
@@ -226,7 +226,7 @@ namespace testConsole003
 
 
 
-           
+
 
 
 
