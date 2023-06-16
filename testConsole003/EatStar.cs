@@ -31,6 +31,7 @@ namespace testConsole003
         int coiny = 0;
         int coinx = 0;
         int score = 0;
+        int userInput = 0;
         System.ConsoleKeyInfo key = default;
 
         int pressKey = 0;
@@ -210,6 +211,11 @@ namespace testConsole003
                     }
 
                 }
+
+
+
+
+
 
 
 
