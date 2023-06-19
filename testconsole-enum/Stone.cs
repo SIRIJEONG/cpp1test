@@ -56,6 +56,7 @@ namespace testConsole003
                 for (int x = 0; x < userInput; x++)
                 {
                     if (x == 0 && y == 0)
+
                     {
                         char2_[y, x] = '0';
                         continue;
