@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5EEA4F85-6DCF-4C57-837C-ECF2837477AE}</ProjectGuid>
+    <ProjectGuid>{219DE577-D278-4196-A4A4-E80F087B03B5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>poker</RootNamespace>
-    <AssemblyName>poker</AssemblyName>
+    <RootNamespace>Potal</RootNamespace>
+    <AssemblyName>Potal</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="card.cs" />
-    <Compile Include="Jokbo.cs" />
+    <Compile Include="Gate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
