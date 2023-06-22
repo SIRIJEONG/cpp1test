@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HorrorGame_230621", "HorrorGame_230621.csproj", "{31455001-0E58-4172-B437-40E2F9D495CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31455001-0E58-4172-B437-40E2F9D495CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31455001-0E58-4172-B437-40E2F9D495CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31455001-0E58-4172-B437-40E2F9D495CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31455001-0E58-4172-B437-40E2F9D495CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09FE61D2-7FDF-486B-801E-88E2B6F66C12}
+	EndGlobalSection
+EndGlobal
